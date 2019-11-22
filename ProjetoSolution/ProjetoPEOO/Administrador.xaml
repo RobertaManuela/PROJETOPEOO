@@ -1,0 +1,21 @@
+﻿<Window x:Class="Administrador.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Administrador"
+        mc:Ignorable="d"
+        Title="School English" Height="310" Width="335">
+    <Grid>
+        <GroupBox Header="Administrador" Margin="10,0,10,60">
+            <Grid Height="203" VerticalAlignment="Top" Margin="0,10,0,-16" >
+                <Button Height="32" Width="210" Content="Cadastrar Aluno" HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" Margin="33,35,0,0" Click=""/>
+                <Button Height="32" Width="210" Content="Cadastrar Professor" HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" Margin="33,86,0,0" Click=""/>
+                <Button Height="32" Width="210" Content="Cadastrar Turmas" HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" Margin="33,141,0,0" Click=""/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
