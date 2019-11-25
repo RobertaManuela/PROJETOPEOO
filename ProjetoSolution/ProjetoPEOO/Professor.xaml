@@ -1,4 +1,4 @@
-﻿<Window x:Class="Administrador.MainWindow"
+﻿<Window x:Class="Telas.Professor"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -12,19 +12,19 @@
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left" 
               VerticalAlignment="Top" Text="Nome:" Margin="140,11,0,0" />
 
-                <TextBox Name="txtN" Height="20" Width="164" HorizontalAlignment="Left" 
+                <TextBox Name="txtNome" Height="20" Width="164" HorizontalAlignment="Left" 
               VerticalAlignment="Top" Text="Airam Aziul ‮Arievilo Zurc" Margin="186,10,0,0" />
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
               VerticalAlignment="Top" Text="Email:" Margin="140,41,0,0"/>
 
-                <TextBox Name="txtE" Height="20" Width="164" HorizontalAlignment="Left" 
+                <TextBox Name="txtEmail" Height="20" Width="164" HorizontalAlignment="Left" 
               VerticalAlignment="Top" Text="airamaziul@gmail.com" Margin="186,40,0,0" />
 
                 <TextBlock Height="18" Width="100" HorizontalAlignment="Left"
               VerticalAlignment="Top" Text="Nascimento:" Margin="10,122,0,0"/>
 
-                <TextBox Name="txtNasci" Height="18" Width="80" HorizontalAlignment="Left" 
+                <TextBox Name="txtNascimento" Height="18" Width="80" HorizontalAlignment="Left" 
               VerticalAlignment="Top" Text="08/02/1987" Margin="80,123,0,0" />
 
                 <TextBlock Height="18" Width="100" HorizontalAlignment="Right"
@@ -36,14 +36,14 @@
                 <TextBlock Height="18" Width="100" HorizontalAlignment="Left"
             VerticalAlignment="Top" Margin="140,66,0,0" Text="Matricula:"/>
 
-                <TextBox Name="txtM" Height="18" Width="80" HorizontalAlignment="Right" 
+                <TextBox Name="txtMatricula" Height="18" Width="80" HorizontalAlignment="Right" 
              VerticalAlignment="Top" Text="1234-7" Margin="0,65,71,0" />
 
 
                 <TextBlock Height="18" Width="100" HorizontalAlignment="Left"
             VerticalAlignment="Top" Margin="140,89,0,0" Text="Senha:"/>
 
-                <TextBox Name="txtS" Height="18" Width="68" HorizontalAlignment="Right" 
+                <TextBox Name="txtSenha" Height="18" Width="68" HorizontalAlignment="Right" 
              VerticalAlignment="Top" Text="" Margin="0,88,83,0" TextChanged="TxtS_TextChanged" />
 
 

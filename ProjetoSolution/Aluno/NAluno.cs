@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NAdministrador
+namespace Aluno
 {
-    public class Aluno
+    class NAluno
     {
         private List<Aluno> a = new List<Aluno>();
         private PAluno i;
@@ -27,9 +27,9 @@ namespace NAdministrador
             i = new PAluno();
             List<PAluno> att = i.Open();
 
-            for( int j = 0;  j < att.Count; j++)
+            for (int j = 0; j < att.Count; j++)
             {
-                if(att[j].GetAlunoId() == x.GetAlunoId())
+                if (att[j].GetAlunoId() == x.GetAlunoId())
                 {
                     att.RemoveAt(j);
                 }
@@ -43,9 +43,9 @@ namespace NAdministrador
             i = new PAluno();
             List<Aluno> excluir = i.Open();
 
-            for(int j = 0; j < excluir.Count; j++)
+            for (int j = 0; j < excluir.Count; j++)
             {
-                if(excluir[i].AlunoId == x.AlunoId())
+                if (excluir[i].AlunoId == x.AlunoId())
                 {
                     excluir.RemoveAt(j);
                 }

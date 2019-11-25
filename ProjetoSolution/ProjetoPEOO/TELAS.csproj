@@ -99,9 +99,6 @@
     <Compile Include="CadastroAluno.xaml.cs">
       <DependentUpon>CadastroAluno.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CadastroProfessor.xaml.cs">
-      <DependentUpon>CadastroProfessor.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CadastroTurma.xaml.cs">
       <DependentUpon>CadastroTurma.xaml</DependentUpon>
     </Compile>

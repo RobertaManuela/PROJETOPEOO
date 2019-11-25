@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MAluno.Properties
+namespace PAluno.Properties
 {
 
 
