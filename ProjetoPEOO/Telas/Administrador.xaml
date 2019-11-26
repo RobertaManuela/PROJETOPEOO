@@ -1,0 +1,20 @@
+﻿<Window x:Class="Telas.Administrador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Telas"
+        mc:Ignorable="d"
+        Title="Administrador" Height="207" Width="330">
+    <Grid>
+        <GroupBox Header="Administrador" Margin="10,0,10,10">
+            <Menu HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="100">
+                <MenuItem Header="Cadastrar">
+                    <MenuItem Header="Aluno" Click="cad_Aluno"/>
+                    <MenuItem Header="Professor" Click="cad_Prof"/>
+                    <MenuItem Header="Turma" Click="cad_Turma"/>
+                </MenuItem>
+            </Menu>
+        </GroupBox>
+    </Grid>
+</Window>
