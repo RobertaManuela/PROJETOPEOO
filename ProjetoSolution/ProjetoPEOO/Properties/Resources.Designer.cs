@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjetoPEOO.Properties
+namespace TELAS.Properties
 {
 
 

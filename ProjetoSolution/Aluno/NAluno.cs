@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Aluno
 {
-    class NAluno
+    public class NAluno
     {
-        private List<Aluno> a = new List<Aluno>();
+        private List<MAluno> a = new List<MAluno>();
         private PAluno i;
 
-        public void InserirAluno(Aluno x)
+        public void InserirAluno(MAluno x)
         {
             a.Add(x);
         }
 
-        public List<Aluno> ListarAluno()
+        public List<MAluno> ListarAluno()
         {
             i = new PAluno();
             return i.Open().a.ToList();
         }
 
-        public void AtualizarAluno(Aluno x)
+        public void AtualizarAluno(MAluno x)
         {
             i = new PAluno();
             List<PAluno> att = i.Open();
@@ -38,10 +38,10 @@ namespace Aluno
             i.Save(att);
         }
 
-        public void ExcluirAluno(Aluno x)
+        public void ExcluirAluno(MAluno x)
         {
             i = new PAluno();
-            List<Aluno> excluir = i.Open();
+            List<MAluno> excluir = i.Open();
 
             for (int j = 0; j < excluir.Count; j++)
             {

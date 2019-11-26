@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace ProjetoPEOO
+namespace TELAS
 {
     /// <summary>
     /// Interação lógica para App.xaml

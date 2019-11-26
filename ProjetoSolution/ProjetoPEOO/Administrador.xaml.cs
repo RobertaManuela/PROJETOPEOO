@@ -13,16 +13,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ProjetoPEOO
+namespace TELAS
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Administrador : Window
     {
-        public MainWindow()
+        public Administrador()
         {
             InitializeComponent();
+        }
+
+        private void cad_Aluno(object sender, RoutedEventArgs e)
+        {
+            CadastroAluno w = new CadastroAluno();
+            w.ShowDialog();
         }
     }
 }
