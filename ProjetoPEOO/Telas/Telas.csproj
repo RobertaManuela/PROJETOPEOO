@@ -76,8 +76,17 @@
     <Compile Include="CadastroTurma.xaml.cs">
       <DependentUpon>CadastroTurma.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Disciplina.xaml.cs">
+      <DependentUpon>Disciplina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListaTurmas.xaml.cs">
+      <DependentUpon>ListaTurmas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatriculaAluno.xaml.cs">
+      <DependentUpon>MatriculaAluno.xaml</DependentUpon>
     </Compile>
     <Compile Include="Professor.xaml.cs">
       <DependentUpon>Professor.xaml</DependentUpon>
@@ -128,7 +137,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Disciplina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListaTurmas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatriculaAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

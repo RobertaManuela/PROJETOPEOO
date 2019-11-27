@@ -8,5 +8,6 @@ namespace Negócio
 {
     class NTurma
     {
+
     }
 }

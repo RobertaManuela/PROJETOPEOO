@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Telas"
         mc:Ignorable="d"
-        Title="CadastroTurma" Height="350" Width="400">
+        Title="CadastroTurma" Height="365" Width="400">
     <Grid>
         <GroupBox Header="Cadastro Turma" Margin="10,10,10,10">
             <Grid Margin="0,0,0,-1" >
@@ -16,29 +16,26 @@
               VerticalAlignment="Top" Text="" Margin="70,10,0,0" />
 
                 <TextBlock Height="30" Width="60" HorizontalAlignment="Left"
-              VerticalAlignment="Top" Margin="10,50,0,0"><Run Text="Nº de"/><LineBreak/><Run Text="alunos:"/></TextBlock>
+              VerticalAlignment="Top" Margin="10,50,0,0" Text="Disciplinas"></TextBlock>
 
-                <TextBox Name="txtNumero" Height="20" Width="80" HorizontalAlignment="Left" 
-              VerticalAlignment="Top" Text="" Margin="70,50,0,0" />
+                <TextBlock Height="35" Width="58" HorizontalAlignment="Right"
+              VerticalAlignment="Top" Margin="0,10,115,0"><Run Text="Nº de "/><Run Text="           "/><LineBreak/><Run/><Run Text="alunos:"/></TextBlock>
 
-                <TextBlock Height="20" Width="58" HorizontalAlignment="Right"
-              VerticalAlignment="Top" Text="Disciplina:" Margin="0,10,115,0"/>
-
-                <TextBox Name="txtDisciplina" Height="20" Width="80" HorizontalAlignment="Right" 
+                <TextBox Name="txtNumAlunos" Height="20" Width="80" HorizontalAlignment="Right" 
              VerticalAlignment="Top" Text="" Margin="0,10,30,0"/>
 
                 <TextBlock Height="20" Width="60" HorizontalAlignment="Left" 
               VerticalAlignment="Top" Text="Professor:" Margin="185,50,0,0" />
 
-                <TextBox Name="txtProfessor" Height="20" Width="80" HorizontalAlignment="Left" 
-              VerticalAlignment="Top" Text="" Margin="250,50,0,0" />
-
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="100,110,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="187,110,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,110,0,0" VerticalAlignment="Top" Width="75"/>
-                <ListBox HorizontalAlignment="Left" Height="130" Margin="10,138,0,0" VerticalAlignment="Top" Width="340"/>
-
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="100,121,0,0" VerticalAlignment="Top" Width="74"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="185,121,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,121,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox HorizontalAlignment="Left" Height="130" Margin="10,155,0,0" VerticalAlignment="Top" Width="340"/>
+                <CheckBox Content="Inglês I" HorizontalAlignment="Left" Margin="75,51,0,0" VerticalAlignment="Top"/>
+                <CheckBox Content="Inglês II" HorizontalAlignment="Left" Margin="75,71,0,0" VerticalAlignment="Top"/>
+                <CheckBox Content="Inglês III" HorizontalAlignment="Left" Margin="75,91,0,0" VerticalAlignment="Top"/>
+                <CheckBox Content="Airam Aziul" HorizontalAlignment="Left" Margin="250,51,0,0" VerticalAlignment="Top" />
             </Grid>
         </GroupBox>
     </Grid>

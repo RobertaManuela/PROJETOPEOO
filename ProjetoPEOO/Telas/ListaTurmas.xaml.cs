@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace TELAS
+namespace Telas
 {
     /// <summary>
-    /// Lógica interna para CadastroTurma.xaml
+    /// Lógica interna para ListaTurmas.xaml
     /// </summary>
-    public partial class CadastroTurma : Window
+    public partial class ListaTurmas : Window
     {
-        public CadastroTurma()
+        public ListaTurmas()
         {
             InitializeComponent();
         }

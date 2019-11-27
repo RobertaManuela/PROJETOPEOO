@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TELAS
+namespace Telas
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para MatriculaAluno.xaml
     /// </summary>
-    public partial class Administrador : Window
+    public partial class MatriculaAluno : Window
     {
-        public Administrador()
+        public MatriculaAluno()
         {
             InitializeComponent();
-        }
-
-        private void cad_Aluno(object sender, RoutedEventArgs e)
-        {
-            CadastroAluno w = new CadastroAluno();
-            w.ShowDialog();
         }
     }
 }

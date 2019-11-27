@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class MAluno
+    public class MAluno
     {
-        private string Nome { get; set; }
-        private string Email { get; set; }
-        private string Matricula { get; set; }
-        private DateTime Nascimento { get; set; }
-        private string Senha { get; set; }
-        private int IdTurma { get; set; }
-        private int Id { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Matricula { get; set; }
+        public DateTime Nascimento { get; set; }
+        public string Senha { get; set; }
+        public int IdTurma { get; set; }
+        public int Id { get; set; }
     }
 }

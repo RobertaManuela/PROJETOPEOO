@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace TELAS
+namespace Telas
 {
     /// <summary>
-    /// Lógica interna para Professor.xaml
+    /// Lógica interna para Disciplina.xaml
     /// </summary>
-    public partial class Professor : Window
+    public partial class Disciplina : Window
     {
-        public Professor()
+        public Disciplina()
         {
             InitializeComponent();
         }
