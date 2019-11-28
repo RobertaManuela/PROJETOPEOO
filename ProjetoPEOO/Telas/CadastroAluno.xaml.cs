@@ -42,7 +42,6 @@ namespace Telas
             else if (k >= 1000 && k < 10000) l = "2019101111" + k.ToString();
             x.Matricula = l;
             n.InserirAluno(x);
-            grid.ItemsSource = n.ListarAluno();
         }
 
         private void SelectClick(object sender, RoutedEventArgs e)
@@ -68,22 +67,19 @@ namespace Telas
             grid.ItemsSource = n.ListarAluno();
         }
 
-        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+
+        private void DeleteClick(object sender, RoutedEventArgs e)
         {
             if (grid.SelectedItem != null)
             {
                 MAluno a = grid.SelectedItem as MAluno;
-
+                n.ExcluirAluno(a);
+                grid.ItemsSource = null;
+                grid.ItemsSource = n.ListarAluno();
             }
         }
 
-        private void DeleteClick(object sender, RoutedEventArgs e)
-        {
-            MAluno x = new MAluno();
-            x.Id = int.Parse(txtid.Text);
-            n.ExcluirAluno(x);
-            grid.ItemsSource = null;
-            grid.ItemsSource = n.ListarAluno();
-        }
+    
     }
 }

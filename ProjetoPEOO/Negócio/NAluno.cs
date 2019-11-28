@@ -15,7 +15,11 @@ namespace Negócio
 
         public void InserirAluno(MAluno x)
         {
-            a = i.Open();
+            i = new PAluno();
+            List<MAluno> a = i.Open();
+            int id = 1;
+            if (a.Count > 0) id = a.Max(y => y.Id) + 1;
+            x.Id = id;
             a.Add(x);
             i.Save(a);
 
@@ -47,18 +51,18 @@ namespace Negócio
 
         public void ExcluirAluno(MAluno x)
         {
+           
             i = new PAluno();
-            List<MAluno> excluir = i.Open();
-
-            for (int j = 0; j < excluir.Count; j++)
+            List<MAluno> a = i.Open();
+            foreach(MAluno j in a)
             {
-                if (excluir[j].Id == x.Id)
+                if (j.Matricula == x.Matricula)
                 {
-                    excluir.RemoveAt(j);
+                    a.Remove(j);
                     break;
                 }
             }
-            i.Save(excluir);
+            i.Save(a);
         }
     }
 }

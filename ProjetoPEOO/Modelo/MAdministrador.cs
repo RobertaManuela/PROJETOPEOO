@@ -17,7 +17,7 @@ namespace Modelo
 
         public override string ToString()
         {
-            return $"{Nome} - {Email} - {Nascimento} - {Matricula} - {Senha}";
+            return $"{Nome} | {Email} | {Nascimento} | {Matricula} | {Senha}";
         }
     }
 }
