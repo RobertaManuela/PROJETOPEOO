@@ -1,4 +1,4 @@
-﻿<Window x:Class="Telas.Login"
+﻿<Window x:Class="Telas.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -14,7 +14,7 @@
                 <TextBox Name="txtS" Height="26" Width="210" HorizontalAlignment="Left"
                      VerticalAlignment="Top" Text="Senha" Margin="10,75,0,0" />
                 <Button Height="26" Width="210" Content="Acessar" HorizontalAlignment="Left" 
-                           VerticalAlignment="Top" Margin="10,120,0,0" />
+                           VerticalAlignment="Top" Margin="10,120,0,0" Click="Button_Click" />
             </Grid>
         </GroupBox>
     </Grid>

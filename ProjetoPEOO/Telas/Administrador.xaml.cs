@@ -23,5 +23,23 @@ namespace Telas
         {
             InitializeComponent();
         }
+
+        private void cad_Aluno(object sender, RoutedEventArgs e)
+        {
+            Window a = new CadastroAluno();
+            a.ShowDialog();
+        }
+
+        private void cad_Prof(object sender, RoutedEventArgs e)
+        {
+            Window p = new CadastroProfessor();
+            p.ShowDialog();
+        }
+
+        private void cad_Turma(object sender, RoutedEventArgs e)
+        {
+            Window t = new CadastroTurma();
+            t.ShowDialog();
+        }
     }
 }

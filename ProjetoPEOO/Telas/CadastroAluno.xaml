@@ -34,9 +34,9 @@
                  VerticalAlignment="Top" Text="" Margin="0,104,10,0" />
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Margin="10,142,0,0" Text="Matricula:"/>
+                VerticalAlignment="Top" Margin="10,142,0,0" Text="ID:"/>
 
-                <TextBox Name="txtm" Height="20" Width="80" HorizontalAlignment="Right" 
+                <TextBox Name="txtid" Height="20" Width="80" HorizontalAlignment="Right" 
                  VerticalAlignment="Top" Text="" Margin="0,142,182,0" />
 
 
@@ -50,7 +50,7 @@
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="100,180,0,0" VerticalAlignment="Top" Width="75" Click="SelectClick"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="186,180,0,0" VerticalAlignment="Top" Width="75" Click="UpdateClick"/>
                 <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,180,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
-                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,219,0,0" VerticalAlignment="Top" Width="340"/>
+                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,219,0,0" VerticalAlignment="Top" Width="340" />
                 <Image  HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83"/>
 
             </Grid>

@@ -44,7 +44,7 @@
             VerticalAlignment="Top" Margin="140,89,0,0" Text="Senha:"/>
 
                 <TextBox Name="txtSenha" Height="18" Width="68" HorizontalAlignment="Right" 
-             VerticalAlignment="Top" Text="" Margin="0,88,83,0" TextChanged="TxtS_TextChanged" />
+             VerticalAlignment="Top" Text="" Margin="0,88,83,0" />
 
 
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="95,160,0,0" VerticalAlignment="Top" Width="75"/>

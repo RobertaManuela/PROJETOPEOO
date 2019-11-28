@@ -13,5 +13,11 @@ namespace Modelo
         public DateTime Nascimento { get; set; }
         public string Senha { get; set; }
         public int Id { get; set; }
+        public string Matricula { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Nome} - {Email} - {Nascimento} - {Matricula} - {Senha}";
+        }
     }
 }

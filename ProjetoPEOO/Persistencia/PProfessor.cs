@@ -15,7 +15,7 @@ namespace Persistencia
         public List<MProfessor> Open()
         {
             List<MProfessor> prof;
-            XmlSerializer x = new XmlSerializer(typeof(List<MProfessor));
+            XmlSerializer x = new XmlSerializer(typeof(List<MProfessor>));
             StreamReader f = null;
             try
             {

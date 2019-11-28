@@ -15,7 +15,10 @@ namespace Negócio
 
         public void InserirAluno(MAluno x)
         {
+            a = i.Open();
             a.Add(x);
+            i.Save(a);
+
         }
 
         public List<MAluno> ListarAluno()
@@ -32,7 +35,7 @@ namespace Negócio
 
             for (int j = 0; j < att.Count; j++)
             {
-                if (att[j].GetId() == x.GetId())
+                if (att[j].Id == x.Id)
                 {
                     att.RemoveAt(j);
                     break;
@@ -49,7 +52,7 @@ namespace Negócio
 
             for (int j = 0; j < excluir.Count; j++)
             {
-                if (excluir[j].Id == x.Id())
+                if (excluir[j].Id == x.Id)
                 {
                     excluir.RemoveAt(j);
                     break;

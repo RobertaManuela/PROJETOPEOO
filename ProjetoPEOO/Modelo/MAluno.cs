@@ -15,5 +15,10 @@ namespace Modelo
         public string Senha { get; set; }
         public int IdTurma { get; set; }
         public int Id { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Nome} {Email} {Nascimento} {Matricula} {Senha} {IdTurma}";
+        }
     }
 }

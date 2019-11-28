@@ -55,10 +55,6 @@
       <Project>{155b748b-b724-4e72-a4fd-2d699ba6a80b}</Project>
       <Name>Persistencia</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Telas\Telas.csproj">
-      <Project>{ec3c7b3e-46af-4ebd-b9f0-cd71a68a4d04}</Project>
-      <Name>Telas</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

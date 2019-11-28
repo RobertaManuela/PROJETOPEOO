@@ -22,10 +22,10 @@
                   VerticalAlignment="Top" Text="" Margin="76,47,0,0" />
 
 
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="64" Click="InsertClick"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="92,89,0,0" VerticalAlignment="Top" Width="64" Click="SelectClick" RenderTransformOrigin="0.467,-0.1"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="181,89,0,0" VerticalAlignment="Top" Width="64" Click="UpdateClick"/>
-                <Button Content="Excluir" HorizontalAlignment="Left" Margin="270,89,0,0" VerticalAlignment="Top" Width="64" Click="DeleteClick"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="64"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="92,89,0,0" VerticalAlignment="Top" Width="64" />
+                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="181,89,0,0" VerticalAlignment="Top" Width="64" />
+                <Button Content="Excluir" HorizontalAlignment="Left" Margin="270,89,0,0" VerticalAlignment="Top" Width="64"/>
                 <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="5,114,0,0" VerticalAlignment="Top" Width="340"/>
             </Grid>
         </GroupBox>

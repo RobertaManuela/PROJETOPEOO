@@ -17,11 +17,17 @@ namespace Telas
     /// <summary>
     /// Lógica interna para Login.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class MainWindow : Window
     {
-        public Login()
+        public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window a = new Administrador();
+            a.ShowDialog();
         }
     }
 }
