@@ -46,11 +46,11 @@
                 <TextBox Name="txtsenha" Height="20" Width="100" HorizontalAlignment="Right" 
                  VerticalAlignment="Top" Text="" Margin="0,142,10,0" />
 
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="100,180,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="186,180,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,180,0,0" VerticalAlignment="Top" Width="75"/>
-                <ListBox HorizontalAlignment="Left" Height="130" Margin="10,219,0,0" VerticalAlignment="Top" Width="340"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="75" Click="InsertClick"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="100,180,0,0" VerticalAlignment="Top" Width="75" Click="SelectClick"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="186,180,0,0" VerticalAlignment="Top" Width="75" Click="UpdateClick"/>
+                <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,180,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
+                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,219,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="grid_SelectionChanged"/>
                 <Image  HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83" />
 
             </Grid>

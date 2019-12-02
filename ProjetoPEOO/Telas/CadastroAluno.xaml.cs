@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +20,7 @@ namespace Telas
     /// </summary>
     public partial class CadastroAluno : Window
     {
-        NAluno n = new NAluno();
-        private int k;
+        NAluno n = new NAluno(); 
         public CadastroAluno()
         {
             InitializeComponent();
@@ -35,12 +34,6 @@ namespace Telas
             x.Email = txte.Text;
             x.Nascimento = DateTime.Parse(txtnasci.Text);
             x.Senha = txts.Text;
-            string l = null;
-            if(k>=1 && k < 10) l = "20191011110000"+k.ToString();
-            else if(k >= 10 && k < 100)l = "2019101111000" + k.ToString();
-            else if (k >= 100 && k < 1000)l = "201910111100" + k.ToString();
-            else if (k >= 1000 && k < 10000) l = "2019101111" + k.ToString();
-            x.Matricula = l;
             n.InserirAluno(x);
         }
 
@@ -56,12 +49,6 @@ namespace Telas
             x.Email = txte.Text;
             x.Nascimento = DateTime.Parse(txtnasci.Text);
             x.Senha = txts.Text;
-            string l = null;
-            if (k >= 1 && k < 10) l = "20191011110000" + k.ToString();
-            else if (k >= 10 && k < 100) l = "2019101111000" + k.ToString();
-            else if (k >= 100 && k < 1000) l = "201910111100" + k.ToString();
-            else if (k >= 1000 && k < 10000) l = "2019101111" + k.ToString();
-            x.Matricula = l;
             n.AtualizarAluno(x);
             grid.ItemsSource = null;
             grid.ItemsSource = n.ListarAluno();
@@ -80,6 +67,24 @@ namespace Telas
             }
         }
 
-    
+        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (grid.SelectedItem != null)
+            {
+                MProfessor c = grid.SelectedItem as MProfessor;
+                txtn.Text = c.Nome;
+                txte.Text = c.Email;
+                txtnasci.Text = c.Nascimento.ToString();
+                txts.Text = c.Senha;
+            }
+            else
+            {
+                txtn.Text = null;
+                txte.Text = null;
+                txtnasci.Text = null;
+                txts.Text = null;
+            }
+        }
+
     }
 }

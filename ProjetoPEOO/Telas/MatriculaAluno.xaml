@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Telas"
         mc:Ignorable="d"
-        Title="MatriculaAluno" Height="450" Width="800">
+        Title="Matricular Aluno" Height="432" Width="491">
     <Grid>
-        
+        <GroupBox>
+            <Grid>
+                <ListBox HorizontalAlignment="Left" Height="129" Margin="10,17,0,0" VerticalAlignment="Top" Width="451"/>
+                <Button Content="Selecionar Turma" HorizontalAlignment="Left" Margin="117,160,0,0" VerticalAlignment="Top" Width="190" Height="26" />
+                <ListBox HorizontalAlignment="Left" Height="139" Margin="10,203,0,0" VerticalAlignment="Top" Width="451"/>
+                <Button Content="Inserir Aluno" HorizontalAlignment="Left" Margin="117,359,0,0" VerticalAlignment="Top" Width="190" Height="26" />
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>

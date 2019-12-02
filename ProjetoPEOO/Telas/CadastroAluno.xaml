@@ -44,7 +44,7 @@
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="100,185,0,0" VerticalAlignment="Top" Width="75" Click="SelectClick"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="186,185,0,0" VerticalAlignment="Top" Width="75" Click="UpdateClick"/>
                 <Button Content="Excluir" HorizontalAlignment="Left" Margin="272,185,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
-                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,217,0,0" VerticalAlignment="Top" Width="340" />
+                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,217,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="grid_SelectionChanged"/>
                 <Image  HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83"/>
                 <CheckBox Content="Inglês I" HorizontalAlignment="Left" Margin="250,106,0,0" VerticalAlignment="Top" Width="97" />
                 <CheckBox Content="Inglês II" HorizontalAlignment="Left" Margin="250,126,0,0" VerticalAlignment="Top" Width="97"/>

@@ -7,55 +7,64 @@ using Modelo;
 using Persistencia;
 
 namespace Negócio
-{
-    class NProfessor
     {
-        private List<MProfessor> a = new List<MProfessor>();
-        PProfessor i;
-
-        public void InserirProfessor(MProfessor x)
+        public class NProfessor
         {
-            a.Add(x);
-        }
+            private List<MProfessor> a = new List<MProfessor>();
+            PProfessor i;
 
-        public List<MProfessor> ListarProfessor()
-        {
-            i = new PProfessor();
-            a = i.Open();
-            return a;
-        }
-
-        public void AtualizarProfessor(MProfessor x)
-        {
-            i = new PProfessor();
-            List<MProfessor> att = i.Open();
-
-            for (int j = 0; j < att.Count; j++)
+            public void InserirProfessor(MProfessor x)
             {
-                if (att[j].Id == x.Id)
-                {
-                    att.RemoveAt(j);
-                    break;
-                }
+                i = new PProfessor();
+                List<MProfessor> a = i.Open();
+                int id = 1;
+                if (a.Count > 0) id = a.Max(y => y.Id) + 1;
+                x.Id = id;
+                x.Matricula = "2019101111" + x.Id.ToString();
+                a.Add(x);
+                i.Save(a);
+
             }
-            att.Add(x);
-            i.Save(att);
-        }
 
-        public void ExcluirProfessor(MProfessor x)
-        {
-            i = new PProfessor();
-            List<MProfessor> excluir = i.Open();
-
-            for (int j = 0; j < excluir.Count; j++)
+            public List<MProfessor> ListarProfessor()
             {
-                if (excluir[j].Id == x.Id)
-                {
-                    excluir.RemoveAt(j);
-                    break;
-                }
+                i = new PProfessor();
+                a = i.Open();
+                return a;
             }
-            i.Save(excluir);
+
+            public void AtualizarProfessor(MProfessor x)
+            {
+                i = new PProfessor();
+                List<MProfessor> att = i.Open();
+                for (int j = 0; j < att.Count; j++)
+                {
+                    if (att[j].Id == x.Id)
+                    {
+                        att.RemoveAt(j);
+                        break;
+                    }
+                }
+                att.Add(x);
+                i.Save(att);
+            }
+
+            public void ExcluirProfessor(MProfessor x)
+            {
+
+                i = new PProfessor();
+                List<MProfessor> a = i.Open();
+                foreach (MProfessor j in a)
+                {
+                    if (j.Matricula == x.Matricula)
+                    {
+                        a.Remove(j);
+                        break;
+                    }
+                }
+                i.Save(a);
+            }
         }
     }
-}
+
+   
