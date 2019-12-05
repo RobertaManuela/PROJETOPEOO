@@ -33,7 +33,7 @@ namespace Persistencia
             return discs;
         }
 
-        public void Save(List<MAluno> discs)
+        public void Save(List<MDisciplina> discs)
         {
             XmlSerializer x = new XmlSerializer(typeof(List<MDisciplina>));
             StreamWriter f = new StreamWriter(arquivo, false, Encoding.Default);

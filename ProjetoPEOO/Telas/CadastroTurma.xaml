@@ -21,7 +21,7 @@
                 <ListBox Name="grid" HorizontalAlignment="Left" Height="101" Margin="10,128,0,0" VerticalAlignment="Top" Width="340"/>
 
                 <ComboBox Name="Bc" HorizontalAlignment="Center" Margin="160,7,10,0" VerticalAlignment="Top" Width="190" />
-                <ComboBox x:Name="Cb" HorizontalAlignment="Center" Margin="10,41,210,0" VerticalAlignment="Top" Width="140" />
+                <ComboBox Name="Cb" HorizontalAlignment="Center" Margin="10,41,210,0" VerticalAlignment="Top" Width="140" />
 
 
             </Grid>

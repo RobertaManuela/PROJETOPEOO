@@ -23,11 +23,13 @@ namespace Telas
     {
         NTurma n = new NTurma();
         NProfessor np = new NProfessor();
+        NDisciplina d = new NDisciplina();
         public CadastroTurma()
         {
             InitializeComponent();
             grid.ItemsSource = n.ListarTurma();
             Bc.ItemsSource = np.ListarProfessor();
+            Cb.ItemsSource = d.ListarDisciplina();
         }
 
         private void InsertClick(object sender, RoutedEventArgs e)
