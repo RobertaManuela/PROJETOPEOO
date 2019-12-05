@@ -21,22 +21,15 @@
                 <TextBox Name="txte" Height="20" Width="206" HorizontalAlignment="Left" 
                   VerticalAlignment="Top" Text="" Margin="141,65,0,0" />
 
-                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
-                  VerticalAlignment="Top" Text="Nascimento:" Margin="10,131,0,0"/>
-
                 <TextBox Name="txtnasci" Height="20" Width="80" HorizontalAlignment="Left" 
-                  VerticalAlignment="Top" Text="dd/mm/yyyy" Margin="95,129,0,0" />
-
-                <ComboBox Name="Cb" HorizontalAlignment="Center" Margin="186,101,10,0" VerticalAlignment="Top" Width="161">
-                    <ComboBoxItem IsSelected="True">--Disciplina--</ComboBoxItem>
-                </ComboBox>
+                  VerticalAlignment="Top" Text="dd/mm/yyyy" Margin="173,97,0,0" />
 
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Margin="10,156,0,0" Text="Senha:"/>
+                VerticalAlignment="Top" Margin="100,131,0,0" Text="Senha:"/>
 
                 <TextBox Name="txts" Height="20" Width="80" HorizontalAlignment="Right" 
-                 VerticalAlignment="Top" Text="" Margin="0,156,182,0" RenderTransformOrigin="0.492,0.867" />
+                 VerticalAlignment="Top" Text="" Margin="0,131,104,0" RenderTransformOrigin="0.492,0.867" />
 
                 <TextBox Name="txtid" Height="0" Width="0" HorizontalAlignment="Right" 
                  VerticalAlignment="Top" Text="" Margin="0,10,174,0" />
@@ -45,9 +38,11 @@
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="100,185,0,0" VerticalAlignment="Top" Width="75" Click="SelectClick"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="186,185,0,0" VerticalAlignment="Top" Width="75" Click="UpdateClick"/>
                 <Button Content="Excluir" HorizontalAlignment="Left" Margin="272,185,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
-                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,217,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="grid_SelectionChanged"/>
-                <Image  HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83"/>
-                <Button Content="Adicionar foto" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="83" Click="InsertClick"/>
+                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,217,0,0" VerticalAlignment="Top" Width="340"/>
+                <Image  Name="image" HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83"/>
+                <Button Content="Adicionar foto" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="83" Click="AddFotoClick"/>
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+                    VerticalAlignment="Top" Text="Nascimento:" Margin="100,99,0,0"/>
 
 
             </Grid>

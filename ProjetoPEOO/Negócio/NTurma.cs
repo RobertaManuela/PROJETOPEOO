@@ -18,8 +18,8 @@ namespace Negócio
             i = new PTurma();
             List<MTurma> a = i.Open();
             int id = 1;
-            if (a.Count > 0) id = a.Max(y => y.IdTurma) + 1;
-            x.IdTurma= id;
+            if (a.Count > 0) id = a.Max(y => y.Id) + 1;
+            x.Id= id;
             a.Add(x);
             i.Save(a);
         }
@@ -38,7 +38,7 @@ namespace Negócio
             List<MTurma> a = i.Open();
             foreach (MTurma j in a)
             {
-                if (j.IdTurma == x.IdTurma)
+                if (j.Id == x.Id)
                 {
                     a.Remove(j);
                     break;

@@ -10,11 +10,11 @@ namespace Modelo
     {
         public string Nivel { get; set; }
         public int IdDisciplina { get; set; }
+        public int Id { get; set; }
 
         public override string ToString()
         {
-            return $"Nome: {Nivel}";
+            return $"ID: {Id} | Nome: {Nivel} |";
         }
     }
 }
-

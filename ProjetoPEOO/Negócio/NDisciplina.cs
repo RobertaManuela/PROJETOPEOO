@@ -18,8 +18,8 @@ namespace Negócio
             i = new PDisciplina();
             List<MDisciplina> a = i.Open();
             int id = 1;
-            if (a.Count > 0) id = a.Max(y => y.IdDisciplina) + 1;
-            x.IdDisciplina = id;
+            if (a.Count > 0) id = a.Max(y => y.Id) + 1;
+            x.Id = id;
             a.Add(x);
             i.Save(a);
         }
@@ -38,7 +38,7 @@ namespace Negócio
             List<MDisciplina> a = i.Open();
             foreach (MDisciplina j in a)
             {
-                if (j.IdDisciplina == x.IdDisciplina)
+                if (j.Id == x.Id)
                 {
                     a.Remove(j);
                     break;
@@ -48,3 +48,4 @@ namespace Negócio
         }
     }
 }
+

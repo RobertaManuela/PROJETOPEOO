@@ -33,11 +33,6 @@ namespace Persistencia
             return discs;
         }
 
-        public void Save(List<MDisciplina> a)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Save(List<MAluno> discs)
         {
             XmlSerializer x = new XmlSerializer(typeof(List<MDisciplina>));

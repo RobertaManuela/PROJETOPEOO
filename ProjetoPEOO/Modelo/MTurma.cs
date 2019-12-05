@@ -12,10 +12,11 @@ namespace Modelo
         public int IdProfessor { get; set; }
         public int IdDisciplina { get; set; }
         public int IdTurma { get; set; }
+        public int Id { get; set; }
 
         public override string ToString()
         {
-            return $"Semestre: {Semestre} | Professor: {IdProfessor} | Disciplina: {IdDisciplina} |";
+            return $"ID: {Id} | Semestre: {Semestre} | Professor: {IdProfessor} | Disciplina: {IdDisciplina} |";
         }
     }
 }

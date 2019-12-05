@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Negócio;
 using Modelo;
+using Microsoft.Win32;
+using System.IO;
+
 namespace Telas
 {
     /// <summary>
@@ -20,7 +23,9 @@ namespace Telas
     /// </summary>
     public partial class CadastroAluno : Window
     {
-        NAluno n = new NAluno(); 
+        NAluno n = new NAluno();
+        private string foto = String.Empty;
+
         public CadastroAluno()
         {
             InitializeComponent();
@@ -32,6 +37,7 @@ namespace Telas
             MAluno x = new MAluno();
             x.Nome = txtn.Text;
             x.Email = txte.Text;
+            x.Foto = foto;
             x.Nascimento = DateTime.Parse(txtnasci.Text);
             x.Senha = txts.Text;
             n.InserirAluno(x);
@@ -67,24 +73,22 @@ namespace Telas
             }
         }
 
-        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void AddFotoClick(object sender, RoutedEventArgs e)
         {
-            if (grid.SelectedItem != null)
+            OpenFileDialog w = new OpenFileDialog();
+            w.Filter = "Arquivos Jpg|*.jpg";
+            if (w.ShowDialog().Value)
             {
-                MAluno = grid.SelectedItem as MAluno;
-                txtn.Text = c.Nome;
-                txte.Text = c.Email;
-                txtnasci.Text = c.Nascimento.ToString();
-                txts.Text = c.Senha;
-            }
-            else
-            {
-                txtn.Text = null;
-                txte.Text = null;
-                txtnasci.Text = null;
-                txts.Text = null;
+                byte[] b = File.ReadAllBytes(w.FileName);
+                foto = Convert.ToBase64String(b);
+
+                BitmapImage bi = new BitmapImage();
+                bi.BeginInit();
+                bi.StreamSource = new MemoryStream(b);
+                bi.EndInit();
+
+                image.Source = bi;
             }
         }
-
     }
 }

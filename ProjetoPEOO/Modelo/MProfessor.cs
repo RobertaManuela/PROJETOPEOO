@@ -14,11 +14,12 @@ namespace Modelo
         public DateTime Nascimento { get; set; }
         public string Senha { get; set; }
         public string Formacao { get; set; }
+        public string Foto { get; set; }
         public int Id { get; set; }
 
         public override string ToString()
         {
-            return $"ID: {Id} | Nome: {Nome} | Email: {Email} | Nascimento: {Nascimento} | Matrícula: {Matricula} | Senha: {Senha} | Formação:{Formacao}";
+            return $"ID: {Id} | Nome: {Nome} | Email: {Email} | Nascimento: {Nascimento} | Matrícula: {Matricula} | Senha: {Senha} | Formação: {Formacao} |";
         }
     }
 

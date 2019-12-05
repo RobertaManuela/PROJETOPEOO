@@ -22,22 +22,20 @@ namespace Telas
     public partial class CadastroTurma : Window
     {
         NTurma n = new NTurma();
-        NDisciplina d = new NDisciplina();
+        NProfessor np = new NProfessor();
         public CadastroTurma()
         {
             InitializeComponent();
-            Cb.ItemsSource = null;
-            Cb.ItemsSource = d.ListarDisciplina();
-            Bc.ItemsSource = n.ListarTurma();
+            grid.ItemsSource = n.ListarTurma();
+            Bc.ItemsSource = np.ListarProfessor();
         }
 
         private void InsertClick(object sender, RoutedEventArgs e)
         {
             MTurma x = new MTurma();
             x.Semestre = txtSemestre.Text;
-            MDisciplina m;
-            m = Cb.SelectedItem as MDisciplina;
-            d.InserirDisciplina(m);
+            x.IdProfessor = (Bc.SelectedItem as MProfessor).Id;
+            x.IdDisciplina = (Cb.SelectedItem as MDisciplina).Id;
             n.InserirTurma(x);
         }
 
@@ -54,19 +52,6 @@ namespace Telas
                 n.ExcluirTurma(a);
                 grid.ItemsSource = null;
                 grid.ItemsSource = n.ListarTurma();
-            }
-        }
-
-        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (grid.SelectedItem != null)
-            {
-                MTurma c = grid.SelectedItem as MTurma;
-                c.Semestre = txtSemestre.Text;
-            }
-            else
-            {
-                txtSemestre.Text = null;
             }
         }
 

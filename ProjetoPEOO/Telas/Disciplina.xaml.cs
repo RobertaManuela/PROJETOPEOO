@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Modelo;
 using Negócio;
-
 namespace Telas
 {
     /// <summary>
@@ -48,19 +47,6 @@ namespace Telas
                 n.ExcluirDisciplina(a);
                 grid.ItemsSource = null;
                 grid.ItemsSource = n.ListarDisciplina();
-            }
-        }
-
-        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (grid.SelectedItem != null)
-            {
-                MDisciplina c = grid.SelectedItem as MDisciplina;
-                c.Nivel = txtnivel.Text;
-            }
-            else
-            {
-                txtnivel.Text = null;
             }
         }
     }

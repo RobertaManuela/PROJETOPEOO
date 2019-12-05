@@ -14,6 +14,7 @@ namespace Modelo
         public DateTime Nascimento { get; set; }
         public string Senha { get; set; }
         public int IdTurma { get; set; }
+        public string Foto { get; set; }
         public int Id { get; set; }
 
         public override string ToString()

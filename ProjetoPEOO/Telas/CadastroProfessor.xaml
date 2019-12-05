@@ -10,43 +10,43 @@
         <GroupBox Header="Cadastro Professor" Margin="10,11,10,10">
             <Grid >
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left" 
-                  VerticalAlignment="Top" Text="Nome:" Margin="100,17,0,0" />
+                  VerticalAlignment="Top" Text="Nome:" Margin="102,28,0,0" />
 
-                <TextBox Name="txtnome" Height="20" Width="206" HorizontalAlignment="Left" 
-                  VerticalAlignment="Top" Text="" Margin="141,17,0,0" />
+                <TextBox Name="txtnome" Height="20" Width="172" HorizontalAlignment="Left" 
+                  VerticalAlignment="Top" Text="" Margin="175,28,0,0" />
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
-                  VerticalAlignment="Top" Text="Email:" Margin="100,65,0,0"/>
+                  VerticalAlignment="Top" Text="Email:" Margin="102,65,0,0"/>
 
-                <TextBox Name="txtemail" Height="20" Width="206" HorizontalAlignment="Left" 
-                  VerticalAlignment="Top" Text="" Margin="141,65,0,0" />
+                <TextBox Name="txtemail" Height="20" Width="172" HorizontalAlignment="Left" 
+                  VerticalAlignment="Top" Text="" Margin="175,65,0,0" />
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
                   VerticalAlignment="Top" Text="Nascimento:" Margin="10,142,0,0"/>
 
                 <TextBox Name="txtnascimento" Height="20" Width="80" HorizontalAlignment="Left" 
-                  VerticalAlignment="Top" Text="dd/mm/yyyy" Margin="95,141,0,0" />
+                  VerticalAlignment="Top" Text="dd/mm/yyyy" Margin="100,142,0,0" />
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Right"
-                  VerticalAlignment="Top" Text="Formação:" Margin="0,104,71,0"/>
+                  VerticalAlignment="Top" Text="Formação:" Margin="0,104,153,0"/>
 
-                <TextBox Name="txtform" Height="20" Width="100" HorizontalAlignment="Right" 
-                 VerticalAlignment="Top" Text="" Margin="0,104,10,0"  />
+                <TextBox Name="txtform" Height="20" Width="175" HorizontalAlignment="Right" 
+                 VerticalAlignment="Top" Text="" Margin="0,104,6,0"  />
 
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
                 VerticalAlignment="Top" Margin="186,142,0,0" Text="Senha:"/>
 
-                <TextBox Name="txtsenha" Height="20" Width="100" HorizontalAlignment="Right" 
-                 VerticalAlignment="Top" Text="" Margin="0,142,10,0" />
+                <TextBox Name="txtsenha" Height="20" 
+                 VerticalAlignment="Top" Text="" Margin="234,142,22,0" />
 
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="75" Click="InsertClick"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="100,180,0,0" VerticalAlignment="Top" Width="75" Click="SelectClick"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="186,180,0,0" VerticalAlignment="Top" Width="75" Click="UpdateClick"/>
                 <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,180,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
                 <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,219,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="grid_SelectionChanged"/>
-                <Image  HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83" />
-                <Button Content="Adicionar foto" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Width="100" Click="InsertClick"/>
+                <Image  Name="image" HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83" />
+                <Button Content="Adicionar foto" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Width="83" Click="AddFotoClick"/>
 
             </Grid>
         </GroupBox>

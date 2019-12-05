@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Negócio;
 using Modelo;
+using Microsoft.Win32;
+using System.IO;
+
 namespace Telas
 {
     /// <summary>
@@ -21,7 +24,8 @@ namespace Telas
     public partial class CadastroProfessor : Window
     {
         NProfessor n = new NProfessor();
-        private int k;
+        private string foto = string.Empty;
+
         public CadastroProfessor()
         {
             InitializeComponent();
@@ -88,6 +92,24 @@ namespace Telas
                 txtnascimento.Text = null;
                 txtsenha.Text = null;
                 txtform.Text = null;
+            }
+        }
+
+        private void AddFotoClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog w = new OpenFileDialog();
+            w.Filter = "Arquivos Jpg|*.jpg";
+            if (w.ShowDialog().Value)
+            {
+                byte[] b = File.ReadAllBytes(w.FileName);
+                foto = Convert.ToBase64String(b);
+
+                BitmapImage bi = new BitmapImage();
+                bi.BeginInit();
+                bi.StreamSource = new MemoryStream(b);
+                bi.EndInit();
+
+                image.Source = bi;
             }
         }
     }

@@ -10,7 +10,7 @@
         <GroupBox>
             <Grid>
                 <ListBox Name="grid" HorizontalAlignment="Left" Height="129" Margin="10,17,0,0" VerticalAlignment="Top" Width="451"/>
-                <Button Content="Selecionar Turma" HorizontalAlignment="Left" Margin="117,160,0,0" VerticalAlignment="Top" Width="190" Height="26" Click="SelecionarTurma" />
+                <Button Content="Selecionar Aluno" HorizontalAlignment="Left" Margin="117,160,0,0" VerticalAlignment="Top" Width="190" Height="26" Click="SelecionarAluno" />
                 <ListBox Name="grid2" HorizontalAlignment="Left" Height="139" Margin="10,203,0,0" VerticalAlignment="Top" Width="451"/>
                 <Button Content="Selecionar Aluno" HorizontalAlignment="Left" Margin="117,359,0,0" VerticalAlignment="Top" Width="190" Height="26" Click="SelecionarAluno"/>
             </Grid>
