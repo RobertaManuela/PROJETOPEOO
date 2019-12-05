@@ -13,18 +13,17 @@
               VerticalAlignment="Top" Text="Semestre:" Margin="10,10,0,0" />
 
                 <TextBox Name="txtSemestre" Height="20" Width="80" HorizontalAlignment="Left" 
-              VerticalAlignment="Top" Text="" Margin="70,10,0,0" TextChanged="TxtSemestre_TextChanged" />
+              VerticalAlignment="Top" Text="" Margin="70,10,0,0" />
 
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="75" Click="InsertClick"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="100,121,0,0" VerticalAlignment="Top" Width="74" Click="SelectClick"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="185,121,0,0" VerticalAlignment="Top" Width="75" Click="UpdateClick"/>
-                <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,121,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
+                <Button Content="Excluir" HorizontalAlignment="Left" Margin="191,121,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
                 <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,155,0,0" VerticalAlignment="Top" Width="340"/>
                 <ComboBox Name="Cb" HorizontalAlignment="Center" Margin="210,10,10,0" VerticalAlignment="Top" Width="140">
                     <ComboBoxItem IsSelected="True">--Disciplina--</ComboBoxItem>
                 </ComboBox>
 
-                <ComboBox Name="Bc" HorizontalAlignment="Center" Margin="10,47,210,0" VerticalAlignment="Top" Width="140">
+                <ComboBox Name="Bc" HorizontalAlignment="Center" Margin="10,47,210,0" VerticalAlignment="Top" Width="140" >
                     <ComboBoxItem IsSelected="True">--Professor--</ComboBoxItem>
                 </ComboBox>
             </Grid>

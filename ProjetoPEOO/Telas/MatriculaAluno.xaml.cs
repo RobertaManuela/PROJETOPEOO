@@ -24,7 +24,12 @@ namespace Telas
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SelecionarTurma(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SelecionarAluno(object sender, RoutedEventArgs e)
         {
 
         }

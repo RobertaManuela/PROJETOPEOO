@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="PAdministrador.cs" />
     <Compile Include="PAluno.cs" />
+    <Compile Include="PDisciplina.cs" />
     <Compile Include="PProfessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTurma.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modelo\Modelo.csproj">

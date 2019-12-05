@@ -22,10 +22,12 @@ namespace Telas
     public partial class CadastroTurma : Window
     {
         NTurma n = new NTurma();
+        NDisciplina d = new NDisciplina();
         public CadastroTurma()
         {
             InitializeComponent();
-            Cb.ItemsSource = n.ListarDisciplinas();
+            Cb.ItemsSource = null;
+            Cb.ItemsSource = d.ListarDisciplina();
             Bc.ItemsSource = n.ListarTurma();
         }
 
@@ -33,21 +35,14 @@ namespace Telas
         {
             MTurma x = new MTurma();
             x.Semestre = txtSemestre.Text;
-            Cb.SelectedItem
+            MDisciplina m;
+            m = Cb.SelectedItem as MDisciplina;
+            d.InserirDisciplina(m);
             n.InserirTurma(x);
         }
 
         private void SelectClick(object sender, RoutedEventArgs e)
         {
-            grid.ItemsSource = n.ListarTurma();
-        }
-
-        private void UpdateClick(object sender, RoutedEventArgs e)
-        {
-            MTurma x = new MTurma();
-            x.Semestre = txtSemestre.Text;
-            n.AtualizarTurma(x);
-            grid.ItemsSource = null;
             grid.ItemsSource = n.ListarTurma();
         }
 
@@ -67,12 +62,13 @@ namespace Telas
             if (grid.SelectedItem != null)
             {
                 MTurma c = grid.SelectedItem as MTurma;
-                x.Semestre = txtSemestre.Text;
+                c.Semestre = txtSemestre.Text;
             }
             else
             {
                 txtSemestre.Text = null;
             }
         }
+
     }
 }

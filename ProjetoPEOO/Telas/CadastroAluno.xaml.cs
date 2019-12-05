@@ -71,7 +71,7 @@ namespace Telas
         {
             if (grid.SelectedItem != null)
             {
-                MProfessor c = grid.SelectedItem as MProfessor;
+                MAluno = grid.SelectedItem as MAluno;
                 txtn.Text = c.Nome;
                 txte.Text = c.Email;
                 txtnasci.Text = c.Nascimento.ToString();

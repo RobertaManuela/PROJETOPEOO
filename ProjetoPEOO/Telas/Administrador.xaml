@@ -13,6 +13,8 @@
                     <MenuItem Header="Aluno" Click="cad_Aluno"/>
                     <MenuItem Header="Professor" Click="cad_Prof"/>
                     <MenuItem Header="Turma" Click="cad_Turma"/>
+                    <MenuItem Header="Disciplina" Click="cad_Discs"/>
+                    <MenuItem Header="Aluno em turma" Click="cad_alunoturma"/>
                 </MenuItem>
             </Menu>
         </GroupBox>

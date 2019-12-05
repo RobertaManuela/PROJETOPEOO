@@ -12,14 +12,12 @@
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left" 
                   VerticalAlignment="Top" Text="Nome:" Margin="10,35,0,0" />
 
-                <TextBox Name="txtn" Height="20" Width="110" HorizontalAlignment="Left" 
+                <TextBox Name="txtnivel" Height="20" Width="110" HorizontalAlignment="Left" 
                   VerticalAlignment="Top" Text="" Margin="48,35,0,0" />
 
-
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="64"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="92,89,0,0" VerticalAlignment="Top" Width="64" />
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="181,89,0,0" VerticalAlignment="Top" Width="64" />
-                <Button Content="Excluir" HorizontalAlignment="Left" Margin="270,89,0,0" VerticalAlignment="Top" Width="64"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="64" Click="InsertClick"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="92,89,0,0" VerticalAlignment="Top" Width="64" Click="SelectClick"/>
+                <Button Content="Excluir" HorizontalAlignment="Left" Margin="178,89,0,0" VerticalAlignment="Top" Width="64" Click="DeleteClick" />
                 <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="5,114,0,0" VerticalAlignment="Top" Width="340"/>
             </Grid>
         </GroupBox>

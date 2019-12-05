@@ -22,22 +22,16 @@
                   VerticalAlignment="Top" Text="" Margin="141,65,0,0" />
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
-                  VerticalAlignment="Top" Text="Nascimento:" Margin="10,104,0,0"/>
+                  VerticalAlignment="Top" Text="Nascimento:" Margin="10,142,0,0"/>
 
                 <TextBox Name="txtnascimento" Height="20" Width="80" HorizontalAlignment="Left" 
-                  VerticalAlignment="Top" Text="dd/mm/yyyy" Margin="95,104,0,0" />
+                  VerticalAlignment="Top" Text="dd/mm/yyyy" Margin="95,141,0,0" />
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Right"
                   VerticalAlignment="Top" Text="Formação:" Margin="0,104,71,0"/>
 
                 <TextBox Name="txtform" Height="20" Width="100" HorizontalAlignment="Right" 
                  VerticalAlignment="Top" Text="" Margin="0,104,10,0"  />
-
-                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Margin="10,142,0,0" Text="Matricula:"/>
-
-                <TextBox Name="txtmat" Height="20" Width="80" HorizontalAlignment="Right" 
-                 VerticalAlignment="Top" Text="" Margin="0,142,182,0" />
 
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
@@ -52,6 +46,7 @@
                 <Button Content="Excluir" HorizontalAlignment="Left" Margin="275,180,0,0" VerticalAlignment="Top" Width="75" Click="DeleteClick"/>
                 <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,219,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="grid_SelectionChanged"/>
                 <Image  HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" VerticalAlignment="Top" Width="83" />
+                <Button Content="Adicionar foto" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Width="100" Click="InsertClick"/>
 
             </Grid>
         </GroupBox>

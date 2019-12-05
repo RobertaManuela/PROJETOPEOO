@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="MAdministrador.cs" />
     <Compile Include="MAluno.cs" />
+    <Compile Include="MDisciplina.cs" />
     <Compile Include="MProfessor.cs" />
     <Compile Include="MTurma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

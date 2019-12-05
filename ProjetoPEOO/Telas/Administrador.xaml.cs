@@ -41,5 +41,17 @@ namespace Telas
             Window t = new CadastroTurma();
             t.ShowDialog();
         }
+
+        private void cad_Discs(object sender, RoutedEventArgs e)
+        {
+            Window d = new Disciplina();
+            d.ShowDialog();
+        }
+
+        private void cad_alunoturma(object sender, RoutedEventArgs e)
+        {
+            Window at = new MatriculaAluno();
+            at.ShowDialog();
+        }
     }
 }

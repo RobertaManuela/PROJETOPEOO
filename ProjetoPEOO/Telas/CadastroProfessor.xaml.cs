@@ -37,13 +37,12 @@ namespace Telas
             x.Senha = txtsenha.Text;
             x.Formacao = txtform.Text;
             n.InserirProfessor(x);
-            grid.ItemsSource = n.ListarProfessor();
 
         }
 
         private void SelectClick(object sender, RoutedEventArgs e)
         {
-            
+            grid.ItemsSource = n.ListarProfessor();
         }
 
         private void UpdateClick(object sender, RoutedEventArgs e)

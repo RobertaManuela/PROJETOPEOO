@@ -20,8 +20,19 @@ namespace Telas
     public partial class Professor : Window
     {
         public Professor()
-        {
+        {   
+
             InitializeComponent();
+        }
+
+        private void ListarTurmasClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UpdateClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

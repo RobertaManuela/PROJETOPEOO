@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    public class MTurma
+    public class MDisciplina
     {
-        public string Semestre { get; set; }
-        public int IdProfessor { get; set; }
+        public string Nivel { get; set; }
         public int IdDisciplina { get; set; }
-        public int IdTurma { get; set; }
 
         public override string ToString()
         {
-            return $"Semestre: {Semestre} | Professor: {IdProfessor} | Disciplina: {IdDisciplina} |";
+            return $"Nome: {Nivel}";
         }
     }
 }
+
