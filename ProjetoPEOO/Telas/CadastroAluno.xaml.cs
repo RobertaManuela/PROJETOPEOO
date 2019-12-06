@@ -41,11 +41,6 @@ namespace Telas
             x.Nascimento = DateTime.Parse(txtnasci.Text);
             x.Senha = txts.Text;
             n.InserirAluno(x);
-            txtn.Text = null;
-            foto = null;
-            txte.Text = null;
-            txts.Text = null;
-            txtnasci.Text = null;
         }
 
         private void SelectClick(object sender, RoutedEventArgs e)

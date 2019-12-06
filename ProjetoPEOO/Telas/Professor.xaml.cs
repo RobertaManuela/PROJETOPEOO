@@ -1,11 +1,8 @@
 ﻿using System;
-using System;
 using Microsoft.Win32;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Modelo;
+using Negócio;
 
 namespace Telas
 {
@@ -48,14 +46,19 @@ namespace Telas
             img.Source = bi;
         }
 
-        private void ListarTurmasClick(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void UpdateClick(object sender, RoutedEventArgs e)
         {
-
+            MProfessor x = new MProfessor();
+            NProfessor n = new NProfessor();
+            x.Nome = txtNome.Text;
+            x.Email = txtEmail.Text;
+            x.Nascimento = DateTime.Parse(txtNascimento.Text);
+            x.Senha = txtSenha.Text;
+            x.Formacao = txtFormacao.Text;
+            x.Id = (grid.SelectedItem as MProfessor).Id;
+            n.AtualizarProfessor(x);
+            grid.ItemsSource = null;
+            grid.ItemsSource = n.ListarProfessor();
         }
     }
 }

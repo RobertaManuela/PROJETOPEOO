@@ -20,7 +20,7 @@ namespace Negócio
                 int id = 1;
                 if (a.Count > 0) id = a.Max(y => y.Id) + 1;
                 x.Id = id;
-                x.Matricula = "2019101111" + x.Id.ToString();
+                x.Matricula = "20191111" + x.Id.ToString();
                 a.Add(x);
                 i.Save(a);
 

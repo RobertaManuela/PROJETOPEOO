@@ -47,9 +47,9 @@
              VerticalAlignment="Top" Text="" Margin="0,88,71,0" />
 
 
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="95,160,0,0" VerticalAlignment="Top" Width="75" Click="ListarTurmasClick"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="95,160,0,0" VerticalAlignment="Top" Width="75" />
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="186,160,0,0" VerticalAlignment="Top" Width="75" Click="UpdateClick"/>
-                <ListBox HorizontalAlignment="Left" Height="130" Margin="10,200,0,0" VerticalAlignment="Top" Width="340"/>
+                <ListBox Name="grid" HorizontalAlignment="Left" Height="130" Margin="10,200,0,0" VerticalAlignment="Top" Width="340"/>
                 <Image Name="img" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="10,10,0,0"/>
 
             </Grid>

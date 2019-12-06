@@ -31,7 +31,7 @@ namespace Telas
             txtNasci.Text = a.Nascimento.ToString();
 
             OpenFileDialog w = new OpenFileDialog();
-            w.Filter = "Arquivos Jpg|*.jpg";
+            w.Filter = "Arquivos jpg|*.jpg";
             byte[] b = Convert.FromBase64String(a.Foto);
 
             BitmapImage bi = new BitmapImage();

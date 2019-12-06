@@ -85,14 +85,6 @@ namespace Telas
                 txtsenha.Text = c.Senha;
                 txtform.Text = c.Formacao;
             }
-            else
-            {
-                txtnome.Text = null;
-                txtemail.Text = null;
-                txtnascimento.Text = null;
-                txtsenha.Text = null;
-                txtform.Text = null;
-            }
         }
 
         private void AddFotoClick(object sender, RoutedEventArgs e)
