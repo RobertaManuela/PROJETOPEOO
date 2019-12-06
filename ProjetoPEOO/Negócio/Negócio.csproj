@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="NAluno.cs" />
     <Compile Include="NDisciplina.cs" />
-    <Compile Include="NLogin.cs" />
     <Compile Include="NProfessor.cs" />
     <Compile Include="NTurma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

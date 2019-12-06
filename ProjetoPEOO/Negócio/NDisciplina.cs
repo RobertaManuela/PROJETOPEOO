@@ -27,8 +27,7 @@ namespace Negócio
         public List<MDisciplina> ListarDisciplina()
         {
             i = new PDisciplina();
-            a = i.Open();
-            return a;
+            return i.Open().OrderBy(a => a.Nivel).ToList();
         }
 
         public void ExcluirDisciplina(MDisciplina x)

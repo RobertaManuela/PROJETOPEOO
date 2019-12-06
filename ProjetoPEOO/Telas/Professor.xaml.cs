@@ -1,4 +1,9 @@
 ﻿using System;
+using System;
+using Microsoft.Win32;
+using System.Collections.Generic;
+using System.Linq;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +16,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
 
 namespace Telas
 {
@@ -19,10 +25,27 @@ namespace Telas
     /// </summary>
     public partial class Professor : Window
     {
-        public Professor()
+        public Professor(MProfessor a)
         {   
 
             InitializeComponent();
+            InitializeComponent();
+            txtNome.Text = a.Nome;
+            txtEmail.Text = a.Email;
+            txtMatricula.Text = a.Matricula;
+            txtSenha.Text = a.Senha;
+            txtNascimento.Text = a.Nascimento.ToString();
+
+            OpenFileDialog w = new OpenFileDialog();
+            w.Filter = "Arquivos Jpg|*.jpg";
+            byte[] b = Convert.FromBase64String(a.Foto);
+
+            BitmapImage bi = new BitmapImage();
+            bi.BeginInit();
+            bi.StreamSource = new MemoryStream(b);
+            bi.EndInit();
+
+            img.Source = bi;
         }
 
         private void ListarTurmasClick(object sender, RoutedEventArgs e)

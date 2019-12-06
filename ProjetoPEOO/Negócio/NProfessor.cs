@@ -29,9 +29,8 @@ namespace Negócio
             public List<MProfessor> ListarProfessor()
             {
                 i = new PProfessor();
-                a = i.Open();
-                return a;
-            }
+                return i.Open().OrderBy(a => a.Nome).ToList();
+        }
 
             public void AtualizarProfessor(MProfessor x)
             {

@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
+using Negócio;
 
 namespace Telas
 {
@@ -24,12 +26,80 @@ namespace Telas
             InitializeComponent();
         }
 
-        public string Usuario { get => txtUsuario.Text; }
-        public string Senha { get => txtSenha.Password; }
-
-        private void btnEntrar(object sender, RoutedEventArgs e)
+        private void BtnEntrar(object sender, RoutedEventArgs e)
         {
-            DialogResult = true;
+            bool logou = false;
+            MAluno u = new MAluno();
+            MProfessor a = new MProfessor();
+            int i = 0;
+            do
+            {
+                logou = VerificarSenha(ref i, txtUsuario.Text, txtSenha.Password, ref u,ref a);
+                if (!logou) MessageBox.Show("Usuário ou senha inválidos");
+                else break;
+            } while (logou);
+            if (logou)
+            {
+                if (i == 0)
+                {
+                    Window janela = new Administrador();
+                    Close();
+                    janela.ShowDialog();
+                }
+                else if (i == 1)
+                {
+                    Window janela = new Aluno(u);
+                    Close();
+                    janela.ShowDialog();
+                }
+                else if (i == 2)
+                {
+                    Window janela = new Professor(a);
+                    Close();
+                    janela.ShowDialog();
+                }
+            }
+        }
+        public static bool VerificarSenha(ref int p, string n, string s, ref MAluno u, ref MProfessor a)
+        {
+            bool r = false;
+            if (n == "Admin")
+            {
+                r = s == "admin";
+                p = 0;
+            }
+            if (r == false)
+            {
+                NProfessor f = new NProfessor();
+                List<MProfessor> lis = f.ListarProfessor();
+                foreach (MProfessor x in lis)
+                {
+                    if (x.Matricula == n && s == x.Senha)
+                    {
+                        r = true;
+                        p = 2;
+                        a = x;
+                        break;
+                    }
+                }
+            }
+            if (r == false)
+            {
+                NAluno e = new NAluno();
+                List<MAluno> b = e.ListarAluno();
+                foreach (MAluno x in b)
+                {
+                    if (x.Matricula == n && s == x.Senha)
+                    {
+                        r = true;
+                        p = 1;
+                        u = x;
+                        break;
+                    }
+                }
+            }
+            return r;
         }
     }
+    
 }

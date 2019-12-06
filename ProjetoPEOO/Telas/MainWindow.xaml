@@ -13,7 +13,7 @@
                      VerticalAlignment="Top" Text="Usuário" Margin="10,30,0,0" />
                 <PasswordBox x:Name="txtSenha" HorizontalAlignment="Center" Height="26" Width="210" Margin="10,74,19,107" />
                 <Button Height="26" Width="210" Content="Entrar" HorizontalAlignment="Left" 
-                           VerticalAlignment="Top" Margin="10,120,0,0" Click="Button_Click" />
+                           VerticalAlignment="Top" Margin="10,120,0,0" Click="BtnEntrar" />
             </Grid>
         </GroupBox>
     </Grid>

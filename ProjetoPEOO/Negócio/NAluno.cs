@@ -28,8 +28,7 @@ namespace Negócio
         public List<MAluno> ListarAluno()
         {
             i = new PAluno();
-            a = i.Open();
-            return a;
+            return i.Open().OrderBy(a => a.Nome).ToList();
         }
 
         public void AtualizarAluno(MAluno x)
