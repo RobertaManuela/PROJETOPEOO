@@ -24,10 +24,12 @@ namespace Telas
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public string Usuario { get => txtUsuario.Text; }
+        public string Senha { get => txtSenha.Password; }
+
+        private void btnEntrar(object sender, RoutedEventArgs e)
         {
-            Window a = new Administrador();
-            a.ShowDialog();
+            DialogResult = true;
         }
     }
 }

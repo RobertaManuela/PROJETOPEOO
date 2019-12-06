@@ -9,11 +9,10 @@
     <Grid>
         <GroupBox Header="Login" Margin="10,0,10,10">
             <Grid Margin="10,0,1,0">
-                <TextBox Name="txtU" Height="26" Width="210" HorizontalAlignment="Left"
+                <TextBox Name="txtUsuario" Height="26" Width="210" HorizontalAlignment="Left"
                      VerticalAlignment="Top" Text="Usuário" Margin="10,30,0,0" />
-                <TextBox Name="txtS" Height="26" Width="210" HorizontalAlignment="Left"
-                     VerticalAlignment="Top" Text="Senha" Margin="10,75,0,0" />
-                <Button Height="26" Width="210" Content="Acessar" HorizontalAlignment="Left" 
+                <PasswordBox x:Name="txtSenha" HorizontalAlignment="Center" Height="26" Width="210" Margin="10,74,19,107" />
+                <Button Height="26" Width="210" Content="Entrar" HorizontalAlignment="Left" 
                            VerticalAlignment="Top" Margin="10,120,0,0" Click="Button_Click" />
             </Grid>
         </GroupBox>
